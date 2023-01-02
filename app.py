@@ -35,7 +35,6 @@ def report():
         sex = request.form["sex"]
         specific_gravety = request.form["specific_gravety"]
         albumin = request.form["albumin"]
-        # blood_urea= request.form["blood_urea"]
         serum_creatinine = request.form["serum_creatinine"]
         hemoglobine = request.form["hemoglobine"]
         pus_cell_clumps = request.form["pus_cell_clumps"]
@@ -47,7 +46,7 @@ def report():
         r = pred
 
         context = {'issue_date' : issue_date, 'name' : name, 'age' : age, 'sex' : sex, 'specific_gravety' : specific_gravety, 'albumin' : albumin, 'serum_creatinine' : serum_creatinine,  'red_blood_cells' : red_blood_cells, 'pus_cell_clumps': pus_cell_clumps, 'hemoglobine' : hemoglobine, 'hypertension' : hypertension, 'diabetes_mellitias' : diabetes_mellitias}
-
+        print(context)
         if r == 0:
             return render_template("report.html", Result = 'positive', context = context, status = "unhealthy", risk = "yes")
     
@@ -56,7 +55,6 @@ def report():
    
     else:
         return render_template("index.html")
-# name = name, age = age, sex = sex,specific_gravety = specific_gravety,albumin =albumin,blood_urea = blood_urea, serum_creatinine = serum_creatinine,  red_blood_cells = red_blood_cells, hemoglobine = hemoglobine, hypertension = hypertension, diabetes_mellitias=diabetes_mellitias,
 
 if __name__ == '__main__':
     app.run(debug=True)

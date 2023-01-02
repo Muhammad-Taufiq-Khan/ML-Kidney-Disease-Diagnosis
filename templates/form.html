@@ -1,0 +1,228 @@
+<div class="container-fluid px-1 py-5 mx-auto bg-light">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-left">
+            
+            <div class="card">
+                <h2 class="text-center text-dark">Request a Tele-diagnosis</h2>
+            <p class="blue-text text-center text-primary">Just answer a few questions so that we can diagnose your renal health </p>
+            <hr>
+
+                <h5 class="text-center mb-4 form-title"> Fill the form based on your recent medical report</h5>
+                
+                <form class="form-card" action="/report" method="POST">
+                    <div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> -->
+                            <input type="text" class="form-control" name="name" placeholder="enter your name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control"  name="age" placeholder="enter your age">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Specific Gravety (sg)<span class="text-warning"> </span></label>
+                        <div class="col-sm-10">
+                            <input type="number" step="any" class="form-control"  name="specific_gravety" placeholder="enter your sg level">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Serum Creatinine (sc)<span class="text-warning"> *mgs/dl</span></label>
+                        <div class="col-sm-10">
+                            <!-- <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> -->
+                            <input type="number" step="any" class="form-control" name="serum_creatinine" placeholder="enter your sc level">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Hemoglobine (hemo)<span class="text-warning"> *gms</label>
+                        <div class="col-sm-10">
+                            <input type="number" step="any" class="form-control"  name="hemoglobine" placeholder="enter your hemoglobine quantity">
+                        </div>
+                    </div>
+
+                   
+
+
+                    <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Sex</legend>
+                        
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1" value="male" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="gridRadios2" value="female">
+                                <label class="form-check-label" for="gridRadios2">
+                                Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Red Blood Cells</legend>
+                            
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="red_blood_cells" id="gridRadios1" value="normal" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    Normal
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="red_blood_cells" id="gridRadios2" value="abnormal">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    Abnormal
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="red_blood_cells" id="gridRadios2" value="NaN">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    Unknown
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Pus Cell Clumps</legend>
+                            
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pus_cell_clumps" id="gridRadios1" value="present" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    Present
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pus_cell_clumps" id="gridRadios2" value="notpresent">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    Not present
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="pus_cell_clumps" id="gridRadios2" value="NaN">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    Unknown
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Hypertension</legend>
+                            
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="hypertension" id="gridRadios1" value="yes" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="hypertension" id="gridRadios2" value="no">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Diabetes Mellitias</legend>
+                            
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="diabetes_mellitias" id="gridRadios1" value="yes" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    Yes
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="diabetes_mellitias" id="gridRadios2" value="no">
+                                    <label class="form-check-label" for="gridRadios2">
+                                    No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Albumin</legend>
+                            
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="albumin" id="gridRadios1" value="0" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                    0.00+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="albumin" id="gridRadios1" value="1" >
+                                    <label class="form-check-label" for="gridRadios1">
+                                    1.00+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="albumin" id="gridRadios1" value="2" >
+                                    <label class="form-check-label" for="gridRadios1">
+                                    2.00+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="albumin" id="gridRadios1" value="3" >
+                                    <label class="form-check-label" for="gridRadios1">
+                                    3.00+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="albumin" id="gridRadios1" value="4" >
+                                    <label class="form-check-label" for="gridRadios1">
+                                    4.00+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="albumin" id="gridRadios1" value="5" >
+                                    <label class="form-check-label" for="gridRadios1">
+                                    5.00+
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </fieldset>
+                    </div>
+                    
+                    <div class="form-group row  justify-content-center ">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-block btn-primary text-center">Analyze Your Kidney</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
