@@ -1,8 +1,8 @@
 # Kidney Disease Diagnosis using Machine Learning
 
-- Environment: <a href='https://kidney-disease-diagnosis.onrender.com'> Live WebApp in render<a> </li>
-- Tools: Python, Flask, Scikit-learn, Matplotlib, Pansdas, Numpy </li>
-- Supporting Algorithm: Random Forest</li>
+- Environment: <a href='https://kidney-disease-diagnosis.onrender.com'> Kidney Disease Diagnosis Live WebApp<a>
+- Tools: Python, Flask, Scikit-learn, Matplotlib, Pansdas, Numpy 
+- Supporting Algorithm: Random Forest
 ---
 
  ## **1. Project Objective**
@@ -40,9 +40,31 @@ Around 1.7 million people die each year because of Kidney disease. Detecting kid
 
 ## **4. Dataset Description**
 
+We have collected the data set from the
+University of California Irvine Machine Learning Repository. The data set has 400 samples and 24 features,
+with a lot of missing values, outliers, typing mistakes, class
+imbalances, etc. In 400 samples, 250 belong to ckd and
+150 belong to notckd. The features Packed Cell Volume
+(pcv), Red Blood Cell Count (rc), and White Blood
+Cell Count (wc) were mistakenly considered as nominal
+because of typing errors. We have converted those features
+into numerical data types. Similarly, few other features
+also have some typos, which have been fixed by the python
+map method.
+ 
+![image](https://user-images.githubusercontent.com/70132613/210613049-871177f6-5786-46a9-9a43-9af5259236f6.png)
+
+![image](https://user-images.githubusercontent.com/70132613/210613327-80f6b273-6ff7-4f71-a5e3-0e9fae68d4b8.png)
+
+ 
+## **5. Method to build the model**
+ 
+ ![image](https://user-images.githubusercontent.com/70132613/210612951-e20cb002-e2ec-4a2d-8307-331daa262405.png)
 
 
-## **5. Algorithm Performance**
+## **6. Algorithm Performance**
+
+- ***Performance of the Random Forest model***
 
 |  | precision | recall |   f1-score | support |
 | ----------- | ----------- | ----------- | ----------- | ----------- | 
