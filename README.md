@@ -77,6 +77,6 @@ map method.
 
 ![image](https://user-images.githubusercontent.com/70132613/210609181-d25271f5-f0c7-4f7a-8dbf-8eb2a929469b.png)
 
-- ***Performance comparison with other traind models***
+- ***Performance comparison with other trained models***
  
  ![image](https://user-images.githubusercontent.com/70132613/210614005-b9876a94-55b7-48d3-8f09-226080a12dec.png)
