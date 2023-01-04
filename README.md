@@ -5,11 +5,11 @@
 - Supporting Algorithm: Random Forest</li>
 ---
 
- **1. Project Objective**
+ ## **1. Project Objective**
 
 Around 1.7 million people die each year because of Kidney disease. Detecting kidney disease in the initial stage is essential for saving millions of lives. In this project, we applied Ordinal Encoder and Label Encoder to encode categorical value and label, Min-Max Normalization to rescale the data, KNN Imputation to impute missing values, Local Outlier Factor to remove outliers, SMOTE to handle data imbalance, K-stratified K-fold Cross-validation to validate the ML models, a novel hybrid feature selection method to remove redundant features, and Grid Search CV  for hyperparameter tuning. Applied algorithms are Support Vector Machine, Gaussian Naive Bayes, Decision Tree, Random Forest, Logistic Regression, K-Nearest Neighbor, Gradient Boosting, Adaptive Boosting, and Extreme Gradient Boosting. Finally, the Random Forest can detect kidney disease in the initial stage with 100% accuracy without any data leakage. Then we have developed a Web Application using Flask (a micro web-Framework), which detect kidney disease using the trained Random Forest model from the backend. 
   
-**2. Expalaination of the directory tree**
+## **2. Expalaination of the directory tree**
 ```
 - Notebooks       : Google colab notebooks and dataset to train the Machine Learning model.
 - joblib_dump     : Saved/dumped best models and fitted preprocessing objects.
@@ -21,7 +21,7 @@ Around 1.7 million people die each year because of Kidney disease. Detecting kid
 - reqirements.txt : Required dependencies list with preferred version.
 ```
 
- **3. WebApp Interface**
+ ## **3. WebApp Interface**
  
  - *Home page*
  
@@ -38,4 +38,20 @@ Around 1.7 million people die each year because of Kidney disease. Detecting kid
 ![image](https://user-images.githubusercontent.com/70132613/210598773-ef32e6ba-5940-4fca-bf44-764d824bb417.png)
 
 
+## **4. Dataset Description**
+
+
+
+## **5. Algorithm Performance**
+
+|  | precision | recall |   f1-score | support |
+| ----------- | ----------- | ----------- | ----------- | ----------- | 
+| 0 |  0.99 | 1.00 | 0.99 | 66 | 
+| 1 |  1.00 | 0.97 | 0.99 | 34 | 
+| accuracy |  |  | 0.99  | 100 | 
+| macro avg | 0.99 | 0.99 | 0.99 |  100 | 
+| weighted avg | 0.99 | 0.99 | 0.99 | 100 | 
+
+
+![image](https://user-images.githubusercontent.com/70132613/210609181-d25271f5-f0c7-4f7a-8dbf-8eb2a929469b.png)
 
